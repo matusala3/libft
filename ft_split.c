@@ -6,7 +6,7 @@
 /*   By: magebreh <magebreh@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/17 11:08:01 by magebreh          #+#    #+#             */
-/*   Updated: 2025/04/18 16:19:06 by magebreh         ###   ########.fr       */
+/*   Updated: 2025/04/21 13:02:48 by magebreh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 char *copy_word(char const *s, int start, int len)
 {
 	char *word;
-	int i;;
+	int i;
 
 	i = 0;
 	word = (char *)malloc(len + 1);
@@ -77,12 +77,10 @@ int fill_words(char **result, const char *s, char c)
 	int i;
 	int start;
 	int word_i;
-	int length;
 
 	start = -1;
 	i = 0;
 	word_i = 0;
-	length = 0;
 	while(s[i])
 	{
 		if ((i == 0 || s[i - 1] == c) && s[i] != c && start == -1)
@@ -111,7 +109,7 @@ char **ft_split(char const *s, char c)
         return (NULL);
 
     word_count = count_words(s, c);
-    result = (char *)malloc(sizeof(char *) * (word_count + 1));
+    result = malloc(sizeof(char *) * (word_count + 1));
     if (!result)
         return (NULL);
 

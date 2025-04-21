@@ -6,13 +6,13 @@
 /*   By: magebreh <magebreh@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 12:11:43 by magebreh          #+#    #+#             */
-/*   Updated: 2025/04/16 14:34:51 by magebreh         ###   ########.fr       */
+/*   Updated: 2025/04/21 10:11:39 by magebreh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //right after a sign it should find a numeric or will return 0
 //handle long int overflow
-int	ft_atoi(char *str)
+int	ft_atoi(const char *str)
 {
 	int	i;
 	int	sign;

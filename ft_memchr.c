@@ -6,7 +6,7 @@
 /*   By: magebreh <magebreh@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 16:18:48 by magebreh          #+#    #+#             */
-/*   Updated: 2025/04/16 14:45:55 by magebreh         ###   ########.fr       */
+/*   Updated: 2025/04/21 13:01:16 by magebreh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 //also later n change it to pointer and use * instead of [](like array)
 void *ft_memchr(const void *s, int c, size_t n)
 {
-    int i;
+    size_t i;
 
     i = 0;
     while(i < n)
