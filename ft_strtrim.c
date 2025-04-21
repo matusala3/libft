@@ -6,7 +6,7 @@
 /*   By: magebreh <magebreh@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/18 17:51:42 by magebreh          #+#    #+#             */
-/*   Updated: 2025/04/19 10:35:56 by magebreh         ###   ########.fr       */
+/*   Updated: 2025/04/21 13:08:37 by magebreh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,12 +28,9 @@ int is_in_set(char c, const char *set)
 
 char *ft_strtrim(char const *s1, char const *set)
 {
-    size_t i;
     size_t start;
     size_t end;
-    char *res;
 
-    i = 0;
     start = 0;
     end = ft_strlen(s1) - 1;
     if(s1 == NULL || set == NULL)
