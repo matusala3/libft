@@ -6,7 +6,7 @@
 /*   By: magebreh <magebreh@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/18 17:51:42 by magebreh          #+#    #+#             */
-/*   Updated: 2025/04/21 13:08:37 by magebreh         ###   ########.fr       */
+/*   Updated: 2025/04/21 17:47:06 by magebreh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,10 +31,10 @@ char *ft_strtrim(char const *s1, char const *set)
     size_t start;
     size_t end;
 
-    start = 0;
-    end = ft_strlen(s1) - 1;
     if(s1 == NULL || set == NULL)
         return(NULL);
+    end = ft_strlen(s1) - 1;
+    start = 0;
     while (s1[start] && is_in_set(s1[start], set))
         start++;
     while (end > start && is_in_set(s1[end], set))

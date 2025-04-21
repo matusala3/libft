@@ -6,13 +6,13 @@
 /*   By: magebreh <magebreh@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/16 16:47:23 by magebreh          #+#    #+#             */
-/*   Updated: 2025/04/18 15:37:21 by magebreh         ###   ########.fr       */
+/*   Updated: 2025/04/21 15:35:45 by magebreh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strchr(const char *s, int c)
+char *ft_strrchr(const char *s, int c)
 {
     int i;
 
