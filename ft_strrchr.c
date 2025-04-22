@@ -6,7 +6,7 @@
 /*   By: magebreh <magebreh@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/16 16:47:23 by magebreh          #+#    #+#             */
-/*   Updated: 2025/04/21 15:35:45 by magebreh         ###   ########.fr       */
+/*   Updated: 2025/04/22 10:38:42 by magebreh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,16 +15,17 @@
 char *ft_strrchr(const char *s, int c)
 {
     int i;
+    char *last;
 
     i = 0;
+    last = NULL;
     while (s[i])
     {
         if (s[i] == (char)c)
-            return ((char *)&s[i]);
+            last = (char *)&s[i];
         i++;
     }
-
-    if (s[i] == (char)c)
-        return ((char *)&s[i]);
-    return (NULL);
+    if ((char)c == '\0')
+        return ((char *)&s[i]);;
+    return (last);
 }
