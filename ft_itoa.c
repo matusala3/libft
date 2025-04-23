@@ -6,16 +6,17 @@
 /*   By: magebreh <magebreh@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/19 16:33:20 by magebreh          #+#    #+#             */
-/*   Updated: 2025/04/19 17:46:33 by magebreh         ###   ########.fr       */
+/*   Updated: 2025/04/22 12:28:45 by magebreh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	count_digits(long n)
+int	count_digits(long n)
 {
-	int count = 0;
+	int	count;
 
+	count = 0;
 	if (n == 0)
 		return (1);
 	while (n)
@@ -26,15 +27,15 @@ static int	count_digits(long n)
 	return (count);
 }
 
-char *ft_itoa(int n)
+char	*ft_itoa(int n)
 {
-	long num;
-	int sign;
-	int len;
-	char *res;
+	long	num;
+	int		sign;
+	int		len;
+	char	*res;
 
-    sign = (n < 0);
-    num = n;
+	sign = (n < 0);
+	num = n;
 	if (sign)
 		num = -num;
 	len = count_digits(num) + sign;

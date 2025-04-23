@@ -6,13 +6,13 @@
 /*   By: magebreh <magebreh@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/21 12:28:14 by magebreh          #+#    #+#             */
-/*   Updated: 2025/04/21 12:31:11 by magebreh         ###   ########.fr       */
+/*   Updated: 2025/04/22 12:47:36 by magebreh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_putchar_fd(char c, int fd)
+void	ft_putchar_fd(char c, int fd)
 {
-    write(fd, &c, 1);
+	write(fd, &c, 1);
 }

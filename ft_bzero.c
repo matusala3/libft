@@ -6,15 +6,15 @@
 /*   By: magebreh <magebreh@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 13:08:41 by magebreh          #+#    #+#             */
-/*   Updated: 2025/04/18 18:21:46 by magebreh         ###   ########.fr       */
+/*   Updated: 2025/04/22 12:21:46 by magebreh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_bzero(void *s, size_t n)
+void	ft_bzero(void *s, size_t n)
 {
-    while(n > 0)
+	while (n > 0)
 	{
 		n--;
 		((unsigned char *)s)[n] = '\0';

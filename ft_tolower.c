@@ -6,14 +6,14 @@
 /*   By: magebreh <magebreh@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 16:22:05 by magebreh          #+#    #+#             */
-/*   Updated: 2025/04/17 15:45:09 by magebreh         ###   ########.fr       */
+/*   Updated: 2025/04/23 10:45:31 by magebreh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_tolower(int c)
+int	ft_tolower(int c)
 {
-    if((c >= 65) && (c <= 90))
-        return (c + 32);
-    else
-        return (c);
+	if ((c >= 65) && (c <= 90))
+		return (c + 32);
+	else
+		return (c);
 }

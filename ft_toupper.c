@@ -6,14 +6,14 @@
 /*   By: magebreh <magebreh@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 16:22:01 by magebreh          #+#    #+#             */
-/*   Updated: 2025/04/17 10:52:21 by magebreh         ###   ########.fr       */
+/*   Updated: 2025/04/23 10:46:12 by magebreh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_toupper(int c)
+int	ft_toupper(int c)
 {
-    if((c >= 97) && (c <= 122))
-        return (c - 32);
-    else
-        return (c);
+	if ((c >= 97) && (c <= 122))
+		return (c - 32);
+	else
+		return (c);
 }

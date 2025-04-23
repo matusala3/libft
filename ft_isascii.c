@@ -6,13 +6,13 @@
 /*   By: magebreh <magebreh@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 13:09:12 by magebreh          #+#    #+#             */
-/*   Updated: 2025/04/15 15:23:09 by magebreh         ###   ########.fr       */
+/*   Updated: 2025/04/22 12:24:13 by magebreh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isascii(int s)
+int	ft_isascii(int s)
 {
-    if((s >= 0) && (s <= 127))
-        return (1);
-    return (0);
+	if ((s >= 0) && (s <= 127))
+		return (1);
+	return (0);
 }

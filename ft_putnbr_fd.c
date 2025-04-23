@@ -6,26 +6,26 @@
 /*   By: magebreh <magebreh@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/21 12:44:56 by magebreh          #+#    #+#             */
-/*   Updated: 2025/04/22 10:42:17 by magebreh         ###   ########.fr       */
+/*   Updated: 2025/04/22 12:51:32 by magebreh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include  "libft.h"
 
-void ft_putnbr_fd(int n, int fd)
+void	ft_putnbr_fd(int n, int fd)
 {
-    char digits[11];
-	int i;
-	long nbr;
+	char	digits[11];
+	int		i;
+	long	nbr;
 
 	nbr = n;
 	i = 0;
-	if(nbr == 0)
-		ft_putchar_fd('0',  fd);
-	if(nbr < 0)
+	if (nbr == 0)
+		ft_putchar_fd('0', fd);
+	if (nbr < 0)
 	{
 		ft_putchar_fd('-', fd);
-		nbr= -nbr;
+		nbr = -nbr;
 	}
 	while (nbr > 0)
 	{
