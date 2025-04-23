@@ -6,7 +6,7 @@
 /*   By: magebreh <magebreh@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/23 16:09:46 by magebreh          #+#    #+#             */
-/*   Updated: 2025/04/23 16:49:33 by magebreh         ###   ########.fr       */
+/*   Updated: 2025/04/23 19:14:37 by magebreh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,12 +16,15 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
 	t_list	*next;
 
-	if (!lst || !del)
+	if (!lst)
 		return ;
 	while (*lst != NULL)
 	{
 		next = (*lst)->next;
-		ft_lstdelone(*lst, del);
+		if (del)
+			ft_lstdelone(*lst, del);
+		else
+			free(*lst);
 		*lst = next;
 	}
 }
