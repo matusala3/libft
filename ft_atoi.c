@@ -6,12 +6,10 @@
 /*   By: magebreh <magebreh@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/15 12:11:43 by magebreh          #+#    #+#             */
-/*   Updated: 2025/04/22 12:20:06 by magebreh         ###   ########.fr       */
+/*   Updated: 2025/04/23 11:28:04 by magebreh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-//right after a sign it should find a numeric or will return 0
-//handle long int overflow
 int	ft_atoi(const char *str)
 {
 	int	i;
