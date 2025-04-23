@@ -6,7 +6,7 @@
 /*   By: magebreh <magebreh@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/16 11:46:25 by magebreh          #+#    #+#             */
-/*   Updated: 2025/04/22 12:46:54 by magebreh         ###   ########.fr       */
+/*   Updated: 2025/04/23 10:57:03 by magebreh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ void	*ft_memset(void *s, int c, size_t n)
 
 	i = 0;
 	val = (unsigned char)c;
-	*ptr = (unsigned char *)s;
+	ptr = (unsigned char *)s;
 	while (i < n)
 	{
 		ptr[i] = val;
