@@ -75,7 +75,7 @@ int	fill_words(char **result, const char *s, char c)
 		if(!result[w])
 		{
 			free_split(result, w);
-			return (NULL);
+			return (0);
 		}
 		i += len;
 		w++;
