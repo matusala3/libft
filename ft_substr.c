@@ -6,7 +6,7 @@
 /*   By: magebreh <magebreh@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/18 15:13:04 by magebreh          #+#    #+#             */
-/*   Updated: 2025/04/23 10:44:39 by magebreh         ###   ########.fr       */
+/*   Updated: 2025/04/24 18:48:12 by magebreh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	else
 		copy_len = available;
 	res = malloc(copy_len + 1);
+	if (!res)
+		return (NULL);
 	ft_strlcpy(res, s + start, copy_len + 1);
 	return (res);
 }

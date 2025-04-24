@@ -6,7 +6,7 @@
 /*   By: magebreh <magebreh@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/21 10:12:43 by magebreh          #+#    #+#             */
-/*   Updated: 2025/04/23 10:33:38 by magebreh         ###   ########.fr       */
+/*   Updated: 2025/04/24 18:47:19 by magebreh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,8 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 		return (NULL);
 	len = ft_strlen(s);
 	res = malloc(len + 1);
+	if(!res)
+		return (NULL);
 	while (s[i])
 	{
 		res[i] = f(i, s[i]);
