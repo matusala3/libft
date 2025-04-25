@@ -6,7 +6,7 @@
 #    By: magebreh <magebreh@student.hive.fi>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/04/24 11:49:18 by magebreh          #+#    #+#              #
-#    Updated: 2025/04/25 12:26:06 by magebreh         ###   ########.fr        #
+#    Updated: 2025/04/25 14:02:22 by magebreh         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,7 +35,7 @@ OBJ_BONUS = $(SRC_BONUS:.c=.o)
 
 all: $(NAME)
 
-bonus: $(OBJ_BONUS)
+bonus: $(NAME) $(OBJ_BONUS)
 	$(AR) $(NAME) $(OBJ_BONUS)
 
 $(NAME): $(OBJ)
@@ -52,4 +52,4 @@ fclean:
 re:	fclean all
 
 .PHONY:
-	all clean re fclean
+	all clean re fclean bonus
