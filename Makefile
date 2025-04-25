@@ -35,22 +35,23 @@ OBJ_BONUS = $(SRC_BONUS:.c=.o)
 
 all: $(NAME)
 
+bonus: .bonus 
 
 $(NAME): $(OBJ)
 	$(AR) $(NAME) $(OBJ)
 
-
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
 
-bonus: $(OBJ_BONUS) $(NAME)
+.bonus: $(OBJ_BONUS) $(NAME)
 	$(AR) $(NAME) $(OBJ_BONUS)
+	touch .bonus
 
 clean:
 	$(RM) $(OBJ) $(OBJ_BONUS)
 
 fclean: clean
-	$(RM) $(NAME)
+	$(RM) $(NAME) $(OBJ) $(OBJ_BONUS) .bonus
 
 re: fclean all
 
