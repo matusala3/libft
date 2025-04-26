@@ -6,7 +6,7 @@
 /*   By: magebreh <magebreh@student.hive.fi>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/17 11:08:01 by magebreh          #+#    #+#             */
-/*   Updated: 2025/04/25 12:27:20 by magebreh         ###   ########.fr       */
+/*   Updated: 2025/04/26 19:17:34 by magebreh         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -70,17 +70,19 @@ int	fill_words(char **result, const char *s, char c)
 	{
 		while (s[i] == c && s[i])
 			i++;
-		len = word_length(&s[i], c);
-		result[w] = ft_substr(s, i, len);
-		if (!result[w])
+		if (s[i])
 		{
-			free_split(result, w);
-			return (0);
+			len = word_length(&s[i], c);
+			result[w] = ft_substr(s, i, len);
+			if (!result[w])
+			{
+				free_split(result, w);
+				return (0);
+			}
+			i += len;
+			w++;
 		}
-		i += len;
-		w++;
 	}
-	result[w] = NULL;
 	return (1);
 }
 
