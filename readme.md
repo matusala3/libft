@@ -56,10 +56,3 @@ _(No UI; library only)_
 - Author: magebreh
 
 ---
-
-### **Tips for School Projects**
-
-✅ **Keep it short** – No need for badges or complex docs.  
-✅ **Explain how to run it** – Your teacher/TA should be able to test it easily.  
-✅ **Mention dependencies** – Avoid "It doesn't work on my machine" issues.  
-✅ **Add screenshots** (if UI-based) – Helps visualize the output.
